@@ -131,15 +131,10 @@ public class ClearUsersTest {
 
         JButton button = getButton();
 
-
-        // since clicking the button should end up displaying a JDialog to the user to report the
-        // result, we set a timer, which will execute code necessary to complete the testing.
         createCloseTimer().start();
 
         //click the button
         button.doClick();
-
-        // will continue execution here after the JDialog is closed
 
         // confirm a popUp was discovered
         assert(popUpDiscovered);
